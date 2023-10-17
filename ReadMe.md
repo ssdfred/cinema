@@ -1,3 +1,4 @@
+j'ai lancer mysql avec la commande : mysql -u root -p -P 3307
 -- Création de la base de données
 CREATE DATABASE IF NOT EXISTS cinema_reservation;
 
