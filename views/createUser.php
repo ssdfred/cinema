@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+<?php include 'navbar.php'; ?>
   <h1>Créer un Utilisateur</h1>
   <form action="/createUser.php" method="post">
     <label for="username">Nom d'utilisateur:</label>
