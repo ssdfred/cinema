@@ -9,19 +9,21 @@
 </head>
 
 <body>
-<?php include 'navbar.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/navbar.php'; ?>
   <h1>Liste des films</h1>
   <ul>
 
     <?php
+
+
     // Récupérer les données des films depuis la base de données
     $query = $connection->query('SELECT * FROM film');
     $films = $query->fetchAll(PDO::FETCH_ASSOC);
     foreach ($films as $film) : ?>
       <li>
-      <a href="/movie">
+      <a href="/movie"></a>
         <?= $film['titre'] ?>
-        </a>
+
       </li>
     <?php endforeach; ?>
   </ul>

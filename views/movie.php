@@ -9,8 +9,11 @@
 </head>
 
 <body>
-<?php include 'navbar.php'; ?>
+
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/navbar.php'; ?>
   <?php
+
+
   // Récupération des détails du film depuis la base de données
   $query = $connection->query('SELECT * FROM film');
   $films = $query->fetchAll(PDO::FETCH_ASSOC);
